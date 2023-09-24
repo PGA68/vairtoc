@@ -1,12 +1,15 @@
 {
   "name": "vairtoc",
+  "version": "0.0.1",
+  "description": "Nulish template",
+  "keywords":[],
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.0.2"
   },
   "bun-create": {
     "preinstall": "echo 'Installing...'",
