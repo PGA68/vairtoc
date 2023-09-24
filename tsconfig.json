@@ -1,22 +1,29 @@
 {
   "compilerOptions": {
+    // add Bun global type defination
+    "types": ["bun-types"],
+
+    // enable latest feature
     "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
+
+    // TS 5.x
+    "moduleResolution": "bundler", // if TS 4.x to "nodenext"
     "noEmit": true,
-    "composite": true,
-    "strict": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
     "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
+    "allowJs": true, // allow import '*.js' from '*.ts'
+    "esModuleInterop": true, // allow default imports for CommonJS module (added )
+
+    // best practics
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
+    "skipLibCheck": true,
+    "composite": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true
   }
 }
